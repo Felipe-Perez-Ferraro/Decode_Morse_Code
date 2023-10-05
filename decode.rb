@@ -15,7 +15,7 @@ def decode_char (string)
   MORSE_CODE[string]
 end
 
-puts decode_char "-.-."
+puts decode_char ".-"
 
 
 # Decode word
@@ -31,3 +31,22 @@ def decode_word(word)
 end
 
 puts decode_word("-- -.--")
+
+# Decode 
+def decode(word)
+  splited_words = word.split(/(?<![Nn]) /)
+  result = ""
+
+  splited_words.each do |word|
+    if word.length == 0
+      result += " "
+    else
+      result += "#{MORSE_CODE[word]}"
+    end
+  end
+
+  return result
+end
+
+puts decode("-- -.--   -. .- -- .")
+puts decode(".-   -... --- -..-   ..-. ..- .-.. .-..   --- ..-.   .-. ..- -... .. . ...")
