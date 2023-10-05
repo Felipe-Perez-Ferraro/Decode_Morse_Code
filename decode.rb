@@ -33,20 +33,12 @@ end
 puts decode_word("-- -.--")
 
 # Decode 
-def decode(word)
-  splited_words = word.split(/(?<![Nn]) /)
-  result = ""
-
-  splited_words.each do |word|
-    if word.length == 0
-      result += " "
-    else
-      result += "#{MORSE_CODE[word]}"
-    end
-  end
-
-  return result
+def decode(message)
+  words = message.split('  ')
+  decoded_message = words.map { |word| decode_word(word) }.join('   ')
+  decoded_message
 end
+
 
 puts decode("-- -.--   -. .- -- .")
 puts decode(".-   -... --- -..-   ..-. ..- .-.. .-..   --- ..-.   .-. ..- -... .. . ...")
