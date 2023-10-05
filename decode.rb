@@ -11,34 +11,33 @@ MORSE_CODE = {
 }.freeze
 
 # Decode character
-def decode_char (string)
+def decode_char(string)
   MORSE_CODE[string]
 end
 
-puts decode_char ".-"
+puts decode_char '.-'
 
 
 # Decode word
 def decode_word(word)
   splited_words = word.split
-  result = ""
+  result = ''
 
-  splited_words.each do |word|
-    result += "#{MORSE_CODE[word]}"
+  splited_words.each do |w|
+    result += MORSE_CODE[w].to_s
   end
 
-  return result
+  result
 end
 
-puts decode_word("-- -.--")
+puts decode_word('-- -.--')
 
-# Decode 
+# Decode
 def decode(message)
   words = message.split('  ')
-  decoded_message = words.map { |word| decode_word(word) }.join('   ')
-  decoded_message
+  words.map { |word| decode_word(word) }.join('   ')
 end
 
 
-puts decode("-- -.--   -. .- -- .")
-puts decode(".-   -... --- -..-   ..-. ..- .-.. .-..   --- ..-.   .-. ..- -... .. . ...")
+puts decode('-- -.--   -. .- -- .')
+puts decode('.-   -... --- -..-   ..-. ..- .-.. .-..   --- ..-.   .-. ..- -... .. . ...')
