@@ -1,13 +1,10 @@
-# morse-code-decoder,
-Morse code decoder. 
-This is a project that is able to decode any Morse Code message into English understandable sentnce.
 
 <a name="readme-top"> </a>
 
 <div align="center">
 
 
-  <h3><b>Morse Code decoder</b></h3>
+  <h1><b>Morse Code decoder</b></h1>
 
 </div>
 
@@ -37,9 +34,9 @@ This is a project that is able to decode any Morse Code message into English und
 
 <!-- PROJECT DESCRIPTION -->
 
-# 📖 [Morse-code-decoder] <a name="about-project"></a>
+# 📖 Morse-code-decoder <a name="about-project"></a>
 
-> In this project. You are able to write any Morse Code message and get a decoded English message.
+In this project, you have the capability to input any Morse Code message and receive a decoded English message in return.
 ## 🛠 Built With <a name="built-with"></a>
 
 ### Tech Stack <a name="tech-stack"></a>
@@ -145,7 +142,7 @@ For deployment, you can use GitHub pages.
 
 Contributions, issues, and feature requests are welcome!
 
-Feel free to check the [issues page](../../issues/).
+Feel free to check the [issues page](https://github.com/Felipe-Perez-Ferraro/Decode_Morse_Code/issues).
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -186,6 +183,5 @@ Ruby is a dynamic, high-level programming language known for its simplicity and 
 
 This project is [MIT](./LICENSE) licensed.
 
-_NOTE: we recommend using the [MIT license](https://choosealicense.com/licenses/mit/) - you can set it up quickly by [using templates available on GitHub](https://docs.github.com/en/communities/setting-up-your-project-for-healthy-contributions/adding-a-license-to-a-repository). You can also use [any other license](https://choosealicense.com/licenses/) if you wish._
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
