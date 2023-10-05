@@ -17,7 +17,6 @@ end
 
 puts decode_char '.-'
 
-
 # Decode word
 def decode_word(word)
   splited_words = word.split
@@ -37,7 +36,6 @@ def decode(message)
   words = message.split('  ')
   words.map { |word| decode_word(word) }.join('   ')
 end
-
 
 puts decode('-- -.--   -. .- -- .')
 puts decode('.-   -... --- -..-   ..-. ..- .-.. .-..   --- ..-.   .-. ..- -... .. . ...')
